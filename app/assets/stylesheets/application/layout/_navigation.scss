@@ -29,7 +29,7 @@
   }
 
   .nav__link {
-    color: $color-primary;
+    color: $white--true;
     font-weight: $font-weight--semibold;
     transition: color 0.2s;
 
@@ -44,6 +44,25 @@
 }
 .nav__link--active{
   font-weight: bold;
+}
+
+.nav-logo-container {
+  top: 0;
+  position: sticky;
+  width: 6.125rem;
+  height: 6.125rem;
+  z-index: 1;
+  opacity: 1;
+  background-color: $color-primary;
+  border-radius: 0;
+  padding: 0.625rem;
+}
+
+.nav-logo {
+  svg {
+    width: 4.9rem;
+    height: 4.804rem;
+  }
 }
 
 
@@ -97,12 +116,11 @@
 .nav--mobile {
   position: fixed;
   z-index: 1;
-  background-color: $white--true;
+  background-color: transparent;
   top: 0;
   width: 100%;
   left: 0;
-  padding: $gutter*0.5;
-  box-shadow: 0 1px 10px 0 rgba(22,22,22,0.1);
+  padding: 0;
 
 
   @include breakpoint ($bp--navbar) {
@@ -110,9 +128,10 @@
   }
 
   .nav__link--wrap {
-    display: none;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background-color: $color-gray--lighter;
+    background-color: transparent;
     position: absolute;
     top: 90px;
     left: 0;
@@ -120,16 +139,19 @@
 
   .nav__link {
     display: block;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.5rem;
-    text-align: center;
-    margin-top: $gutter;
-    margin-bottom: $gutter;
+    text-align: left;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: $white--true;
+    text-decoration: none;
   }
 
   &__logo {
     display: block;
     height: 2rem;
+    background-color: $color-primary;
     img {
       object-fit: contain;
       height: 100%;
@@ -140,7 +162,7 @@
     display: none;
     height: 100vh;
     position: fixed;
-    background: $white--true;
+    background: $color-primary;
     width: 100%;
     top: 4rem;
     left: 0;
