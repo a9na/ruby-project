@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  const $accordionHeaders = $('.js-accordion__head');
-  const $accordionBodies = $('.js-accordion__body');
+  const $head = $('.js-accordion__head');
+  const $body = $('.js-accordion__body');
 
   const $firstItem = $('.accordion__item').eq(0);
   $firstItem.addClass('open');

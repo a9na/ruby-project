@@ -1,5 +1,22 @@
-<h1><%= t('pages_nav.faqs') %></h1>
-<% @faqs.each_with_index do |faq, index| %>
-  <p><%= faq.question %></p>
-  <p><%= faq.answer %></p>
-<% end %>
+<div class="faqs layout--main">
+  <h2 class="faqs-title"><%= t('pages_nav.faqs') %></h2>
+  <div class="tabs flex flex--column flex-align--start">
+    <% @faqs.each_with_index do |faq, index| %>
+    <div class="accordion__item">
+      <div class="js-accordion__head flex flex--between">
+        <p class="faq-question"><%= faq.question %></p>
+        <button class="btn--faqs">
+          <div class="faq-icons">
+            <%= image_tag 'faqs/plus-icon.svg', class: 'faq-icon-plus', alt: 'Expand', width: 24, height: 24 %>
+            <%= image_tag 'faqs/minus-icon.svg', class: 'faq-icon-minus', alt: 'Collapse', width: 24, height: 24 %>
+        </button>
+      </div>
+      <hr class="solid">
+      <div class="js-accordion__body">
+        <p class="faqs-answer"><%= faq.answer %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+

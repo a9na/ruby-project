@@ -1,7 +1,11 @@
-<h2><%= t('pages_nav.documents') %></h2>
-<% @documents.each do |document| %>
-  <%= document.name %>
-  <%= link_to document.file_url, target: '_blank', class: 'document-item__button' do %>
-    <%= inline_svg 'icons/download.svg' %>
-  <% end %>
-<% end %>
+<div class="documents layout--main">
+  <h2 class="documents-title"><%= t('pages_nav.documents') %></h2>
+    <% @documents.each do |document| %>
+    <div class="documents-wrapper flex flex--between">
+      <p class="documents-name"><%= document.name %></p>
+      <%= link_to document.file_url, target: '_blank', class: 'documents-item__button' do %>
+        <%= inline_svg 'icons/download.svg' %>
+      <% end %>
+    </div>  
+    <% end %>
+</div>
