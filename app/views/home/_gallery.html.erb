@@ -1,5 +1,20 @@
-<% @page_content.gallery_images.each_with_index do |gallery_image, index| %>
-  <%= link_to image_url(gallery_image.image_url(:large)), alt: resolve_image_alt(gallery_image), title: resolve_image_alt(gallery_image) do %>
-    <%= image_tag(gallery_image.image_url(:medium)) %>
+<% @page_content.gallery_images.each_with_index do |image, i| %>
+  <% if i < 4 %>
+    <% if i == 3 %>
+      <%= link_to image_url(image.image_url(:large)), alt: resolve_image_alt(image), title: resolve_image_alt(image), data: { lightbox: "gallery" } do %>
+        <div class="overlay-hidden">
+          <%= image_tag(image.image_url(:medium), class: "gallery-image last-visible") %>
+          <span class="overlay-hidden__text">+<%= @page_content.gallery_images.size - 4 %></span>
+        </div>
+      <% end %>
+    <% else %>
+      <%= link_to image_url(image.image_url(:large)), alt: resolve_image_alt(image), title: resolve_image_alt(image), data: { lightbox: "gallery" } do %>
+        <%= image_tag(image.image_url(:medium), class: "gallery-image") %>
+      <% end %>
+    <% end %>
+  <% else %>
+    <%= link_to image_url(image.image_url(:large)), alt: resolve_image_alt(image), title: resolve_image_alt(image), data: { lightbox: "gallery" }, class: "hidden-link" do %>
+      <%= image_tag(image.image_url(:medium), class: "gallery-image hidden-image") %>
+    <% end %>
   <% end %>
 <% end %>
