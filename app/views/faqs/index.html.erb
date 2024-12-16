@@ -5,7 +5,7 @@
     <div class="accordion__item">
       <div class="js-accordion__head flex flex--between">
         <p class="faq-question"><%= faq.question %></p>
-        <button class="btn--faqs">
+        <button class="faq__buttons">
           <div class="faq-icons">
             <%= image_tag 'faqs/plus-icon.svg', class: 'faq-icon-plus', alt: 'Expand', width: 24, height: 24 %>
             <%= image_tag 'faqs/minus-icon.svg', class: 'faq-icon-minus', alt: 'Collapse', width: 24, height: 24 %>
@@ -13,7 +13,7 @@
       </div>
       <hr class="solid">
       <div class="js-accordion__body">
-        <p class="faqs-answer"><%= faq.answer %></p>
+        <p class="faq-answer"><%= faq.answer %></p>
       </div>
     </div>
     <% end %>

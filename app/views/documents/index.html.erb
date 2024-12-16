@@ -1,11 +1,17 @@
 <div class="documents layout--main">
   <h2 class="documents-title"><%= t('pages_nav.documents') %></h2>
+  <% if @documents.present? %>
     <% @documents.each do |document| %>
-    <div class="documents-wrapper flex flex--between">
-      <p class="documents-name"><%= document.name %></p>
-      <%= link_to document.file_url, target: '_blank', class: 'documents-item__button' do %>
-        <%= inline_svg 'icons/download.svg' %>
-      <% end %>
-    </div>  
+      <div class="documents-wrapper flex flex--between">
+        <p>Document Debug: <%= debug(document) %></p>
+        <p class="documents-name"><%= document.name %></p>
+        <p>File URL: <%= document.file.url if document.file.present? %></p>
+        <%= link_to document.file.url, target: '_blank', class: 'documents__button' do %>
+          Download
+        <% end %>
+      </div>
     <% end %>
+  <% else %>
+    <p>No documents available.</p>
+  <% end %>
 </div>

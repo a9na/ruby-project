@@ -46,7 +46,7 @@
   font-weight: bold;
 }
 
-.nav-logo-container {
+.nav-logo-wrapper {
   top: 0;
   position: sticky;
   width: 6.125rem;
@@ -122,15 +122,11 @@
   left: 0;
   padding: 0;
 
-
-  @include breakpoint ($bp--navbar) {
-    display: none;
-  }
-
   .nav__link--wrap {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 1.5rem;
     background-color: transparent;
     position: absolute;
     top: 90px;
@@ -140,12 +136,24 @@
   .nav__link {
     display: block;
     font-size: 1.5rem;
+    font-weight: 400;
     line-height: 1.5rem;
     text-align: left;
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     color: $white--true;
     text-decoration: none;
+  }
+
+  .nav__link__first{
+    font-size: 0.875rem;
+    color: $white--true;
+    line-height: 17.6px;
+  }
+
+  .nav-container{
+    width: 100%;
+    color: $white--true;
   }
 
   &__logo {
@@ -159,12 +167,13 @@
   }
 
   &__content {
-    display: none;
-    height: 100vh;
+    display: none;        
+    top: 0;
+    right: 0;
+    width: 21.375rem;
+    height: 67.5rem;
     position: fixed;
     background: $color-primary;
-    width: 100%;
-    top: 4rem;
-    left: 0;
+    z-index: -1;
   }
 }

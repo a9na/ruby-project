@@ -1,5 +1,5 @@
 .accordion__item {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
 }
 
@@ -18,8 +18,6 @@
 
 .accordion__body {
   display: none;
-  // padding-top: 1rem;
-  // padding-bottom: 1rem;
 
   & > p:not(:last-child) {
     margin-bottom: 1rem;
