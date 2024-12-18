@@ -1,9 +1,8 @@
-// http://callmenick.com/post/simple-responsive-tabs-javascript-css
-
 .tabs {
   display: flex;
   flex-direction: column;
-
+  width: 100%;
+  padding-block-start: 60px;
   @include breakpoint ($medium) {
     flex-direction: row;
   }
@@ -19,13 +18,11 @@
   }
 }
 
-.tabs__content {
+
+.js-accordion__body {
+  display: none;
   padding-top: $gutter;
   border-top: 2px solid $color-primary;
-
-  & > div {
-    display: none;
-  }
 
   & > .is-active {
     display: block;
@@ -37,4 +34,30 @@
     border-top: 0;
     padding-top: 0;
   }
+}
+
+.accordion__item{
+  width: 100%;
+  &.active{
+    .solid{
+      border: none;
+    }
+    .faq__buttons{
+      .faq-icon-plus{
+        opacity: 0;
+      }
+      .faq-icon-minus{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.js-accordion__head{
+  cursor: pointer;
+  width: 100%;
+}
+
+.solid{
+  border-top: 1px solid lighten($black--true, 80%);  
 }

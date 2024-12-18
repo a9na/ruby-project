@@ -1,7 +1,7 @@
-<div id="contact-info" class="contact-section layout--main flex flex--column">
+<div id="contact-project" class="contact-section layout--main flex flex--column">
   <h2><%= t('pages_nav.contact') %></h2>
   <div class="contact flex flex--row flex-align--start">
-    <div class="contact-google-map"></div>
+    <div id="contact-google-map" style="height: 360px; width: 708px;">></div>
     <div class="contact-description flex flex--column flex--start flex-align--start">
       <div class="contact-detail">
         <h4>Adresa</h4>
@@ -26,19 +26,21 @@
   </div>
 </div>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const mapElement = document.getElementById("google-map");
-    const locationCoordinates = { lat: 45.5620, lng: 18.6964 }; 
+  function initMap() {
+  const coordinates = { lat: 45.5620, lng: 18.6964};
 
-    const googleMapInstance = new google.maps.Map(mapElement, {
-      zoom: 13,
-      center: locationCoordinates,
-    });
 
-    const mapMarker = new google.maps.Marker({
-      position: locationCoordinates,
-      map: googleMapInstance,
-      title: "Your Location",
-    });
+  const map = new google.maps.Map(document.getElementById("contact-google-map"), {
+    zoom: 13,
+    center: coordinates,
   });
+
+  new google.maps.Marker({
+    position: coordinates,
+    map: map,
+    title: "Your Location",
+  });
+}
 </script>
+
+

@@ -1,11 +1,19 @@
-<div id="posts">
+<div id="posts" class="flex flex--column">
   <% posts.each do |post| %>
-    <%= image_tag post.image_url(:medium) %>
-    <%= link_to post_path(post) do %>
-      <p><%= post.title %></p>
-    <% end %>
-    <%= post.summary %>
-    <%= post_timestamp(post.publish_at) %>
+    <div class="posts__content flex flex--row flex-align--start">
+      <%= image_tag post.image_url(:medium), class:'posts__image' %>
+      <div class="posts__description flex flex--column flex-align--start">
+        <%= link_to post_path(post), style: "text-decoration: none;" do %>
+          <h3 class="posts__title"><%= post.title %></h3>
+        <% end %>
+        <p class="posts__summary">
+          <%= post.summary %>
+        </p>
+        <span class="posts__timestamp">
+          <%= post_timestamp(post.publish_at) %>
+        </span>
+      </div>
+    </div>
   <% end %>
-  <%= paginate posts, remote: true %>
+  <%= paginate posts, class: 'pagination' %>
 </div>

@@ -1,0 +1,27 @@
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+
+    .logo {  
+        padding: 24px;
+    }
+    .header__title {
+        color: $white--true;
+        font-size: 6rem;
+        font-weight: 400;
+        text-align: center;
+        line-height: 130.37px;
+        margin: 0.75rem 0 0 0;    
+    }
+    .header__info {
+        font-size: 1.5rem;
+        color: $white--true;
+        font-weight: 400;
+        text-align: center;
+        margin-block-start: 0.75rem;
+    }
+}

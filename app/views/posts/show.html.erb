@@ -8,17 +8,15 @@
 <% content_for :edit_link, admin_post_path(@post) %>
 <% content_for :edit_meta_tags_link, admin_post_path(@post, tab: 2) %>
 
-
-<div class="layout--main flex flex-align--center flex--column">
-    <div class="news-show flex flex-align--start flex--column">
-
+<div class="layout--main flex flex--column flex-align--center">
+    <div class="news-detail flex flex--column flex-align--start">
+        <h1 class="news-detail-title"><%= @post.title %></h1>
+        <p class="post-timestamp">
+            <%= post_timestamp(@post.publish_at) %>
+        </p>
+        <%= image_tag @post.image_url(:large), class: 'news-detail-image' %>
+        <article class="news-detail-info">
+            <%= @post.text.html_safe %>
+        </article>
     </div>
-    
-<div>
-
-<h1><%= @post.title %></h1>
-<%= post_timestamp(@post.publish_at) %>
-<%= image_tag @post.image_url(:large) %>
-<article>
-<%= @post.text.html_safe %>
-</article>
+</div>
