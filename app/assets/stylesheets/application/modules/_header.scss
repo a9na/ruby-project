@@ -1,27 +1,29 @@
 .header {
+    background-color: $color-primary;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $color-primary;
 
-    .logo {  
-        padding: 24px;
+    .header__logo {  
+        padding: 1.5rem;
     }
+
     .header__title {
-        color: $white--true;
         font-size: 6rem;
         font-weight: 400;
         text-align: center;
-        line-height: 130.37px;
+        line-height: 8.148rem;
+        color: $white--true;
         margin: 0.75rem 0 0 0;    
     }
+    
     .header__info {
-        font-size: 1.5rem;
-        color: $white--true;
-        font-weight: 400;
+        margin-top: 0.75rem;
         text-align: center;
-        margin-block-start: 0.75rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $white--true;
     }
 }

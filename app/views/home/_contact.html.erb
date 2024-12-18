@@ -1,27 +1,21 @@
 <div id="contact-project" class="contact-section layout--main flex flex--column">
   <h2><%= t('pages_nav.contact') %></h2>
   <div class="contact flex flex--row flex-align--start">
-    <div id="contact-google-map" style="height: 360px; width: 708px;">></div>
-    <div class="contact-description flex flex--column flex--start flex-align--start">
-      <div class="contact-detail">
+    <div id="contact-google-map" style="height: 360px; width: 708px;"></div>
+    <div class="contact-wrapper flex flex--column flex--start flex-align--start">
         <h4>Adresa</h4>
-        <address>
+        <address class="contact-detail">
           Trg Vatroslava Lisinskog 11<br>
           31000 Osijek, Hrvatska
         </address>
-      </div>
-      <div class="contact-detail">
         <h4>Telefon</h4>
-        <p>
+        <p class="contact-detail">
           <%= link_to '+385 (0)31 229 181', 'tel:+38531229181', class: 'link' %>
         </p>
-      </div>
-      <div class="contact-detail">
         <h4>E-mail</h4>
-        <p>
+        <p class="contact-detail">
           <%= mail_to 'info@starapekara.eu', 'info@starapekara.eu', class: 'link' %>
         </p>
-      </div>
     </div>
   </div>
 </div>

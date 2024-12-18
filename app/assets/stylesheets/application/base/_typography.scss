@@ -7,7 +7,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
-$base-font-family: 'Raleway', sans-serif;
+$base-font-family: 'Source Sans 3', sans-serif;
 $base-font-weight: $font-weight--regular;
 $base-font-size: 16px;
 $base-line-height: 1.6;
@@ -35,14 +35,24 @@ h1 {
 
 h2 {
   @include fluid-typography($h2-font-sizes);
+  color: $color-primary;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 65.18px;
+  margin-block-end: 1.5rem;
 }
 
 h3 {
   @include fluid-typography($h3-font-sizes);
+  
 }
 
 h4 {
   @include fluid-typography($h4-font-sizes);
+  font-family: 'Source Sans 3', sans-serif;
+  color: $color-primary;
+  font-weight: 700;
+  margin: 0;
 }
 
 h5 {
@@ -76,12 +86,12 @@ ol li {
 .link {
   outline-width: 0;
   text-decoration: none;
-  color: $color-primary;
+  color: $black--true;
   transition: 0.2s;
 }
 
 .link:hover, .link:focus, .link:active {
-  color: lighten($color-primary, 10%);
+  color: lighten($black--true, 10%);
 }
 
 /*------------------------------------*\
@@ -143,6 +153,7 @@ p {
   @include font-size($copy-font-sizes);
   font-family: $base-font-family;
   margin-bottom: 1.5rem;
+  font-weight: 400;
 }
 
 pre,
@@ -152,6 +163,7 @@ code {
   margin-bottom: 1rem;
   display: block;
 }
+
 
 /*------------------------------------*\
 ** FONT WEIGHTS
