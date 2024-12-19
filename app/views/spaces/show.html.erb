@@ -16,36 +16,36 @@
 <div class="layout--main flex flex--column">
  
   <div class="space flex flex--column">
-    <h1 class="space-name">
+    <h1 class="space__name">
       <%= @space.name %>
     </h1>
-    <span class="space-description">
+    <span class="space__description">
       <%= @space.description.html_safe %>
     </span>
   
     <div class="space-price-info flex flex--row flex--center">
-      <div class="space-price-box flex flex--column flex--center">
+      <div class="space-price-frame flex flex--column flex--center">
         <span class="space-price"><%= humanized_money_with_symbol(@space.book_price) %></span>
-        <p class="space-price-container__info">po satu</p>
+        <p class="space-price-wrapper">po satu</p>
       </div>
-      <div class="space-price-box flex flex--column flex--center">
+      <div class="space-price-frame flex flex--column flex--center">
         <span class="space-price"><%= surface(@space.surface_area) %></span>
-        <p class="space-price-container__info">na raspolaganju</p>
+        <p class="space-price-wrapper">na raspolaganju</p>
       </div>
       <% if  @space.bookable %>
     </div>
     <% end %>
     <% if  @space.rentable %>
-    <div class="monthly-price">
-      <div class="space-price-box flex flex--column flex--center">
+    <div class="price__by-month">
+      <div class="space-price-frame flex flex--column flex--center">
         <span class="space-price"><%= humanized_money_with_symbol(@space.rent_price) %></span>
-        <p class="space-price-container__info">mjesečno</p>    
+        <p class="space-price-wrapper">mjesečno</p>    
       </div>
     </div>
     <% end %>
     <% if @space.available %>
-      <%= link_to t('space.rent_monthly', price: humanized_money_with_symbol(@space.rent_price)), new_space_rent_request_space_path(@space), class: 'btn--primary section__button' if @space.rentable %>
-      <%= link_to t('space.rent_hourly', price: humanized_money_with_symbol(@space.book_price)), booking_general_space_path(@space), class: 'btn--primary section__button' if @space.bookable %>
+      <%= link_to t('space.rent_monthly', price: humanized_money_with_symbol(@space.rent_price)), new_space_rent_request_space_path(@space), class: 'btn--primary space__button' if @space.rentable %>
+      <%= link_to t('space.rent_hourly', price: humanized_money_with_symbol(@space.book_price)), booking_general_space_path(@space), class: 'btn--primary space__button' if @space.bookable %>
     <% else %>
       <%= t('space.unavailable') %>
     <% end %>

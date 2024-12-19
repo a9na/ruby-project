@@ -11,7 +11,7 @@
 <div class="layout--main flex flex--column flex-align--center">
     <div class="news-detail flex flex--column flex-align--start">
         <h1 class="news-detail-title"><%= @post.title %></h1>
-        <p class="post-timestamp">
+        <p class="posts__timestamp">
             <%= post_timestamp(@post.publish_at) %>
         </p>
         <%= image_tag @post.image_url(:large), class: 'news-detail-image' %>

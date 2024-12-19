@@ -1,0 +1,138 @@
+.spaces {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    margin-inline: 7.625rem;
+}
+
+.spaces__info {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.spaces__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.image {
+    width: 21.375rem;
+    height: 21.375rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.image__info {
+    width: 21.375rem;
+    height: 21.375rem;
+    padding: 0.625rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-primary,0.6);
+    z-index: 1;
+}
+
+.space__title {
+    margin: 0;
+    font-weight: 400;
+    font-family: $base-font-family;
+    font-size: 2.25rem;
+    line-height: 2.828rem;
+    color: $white--true;
+}
+
+.space__letter {
+    margin: 0;
+    font-family: $heading-font-family;
+    font-size: 6rem;
+    font-weight: 400;
+    color: $white--true;
+}
+
+.space__cost {
+    margin: 0;
+    font-family: $base-font-family;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $white--true;
+}
+
+.space {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+
+.space__name {
+    color: $color-primary;
+    text-align: center;
+    font-family: $heading-font-family;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.074rem;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.space__description {
+    color: $black--true;
+    text-align: left;
+    font-family: $base-font-family;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-wrap: pretty;
+}
+
+.space-price-info {
+    padding-bottom: 0;
+    width: 100%;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.space-price-frame {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-inline: auto;
+    width: 27.5rem;
+    height: 8.188rem;
+    border: 1px solid $color-primary;
+}
+
+.space-price {
+    margin: 0;
+    text-align: left;
+    color: $color-primary;
+    font-family: $base-font-family;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.771rem;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.space-price-wrapper {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: $color-primary;
+    font-family: $base-font-family;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.414rem;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.price__by-month{
+    margin-top: 1.5rem;
+}
