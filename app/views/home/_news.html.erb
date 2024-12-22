@@ -1,18 +1,18 @@
 <div class="layout--main">
   <div class="news flex flex--column">
     <h2 class="news__title"><%= t('pages_nav.posts') %></h2>
-    <div class="post-content flex flex--row flex-align--start">
-      <%= image_tag @post.image_url(:medium), class: 'post-image' %>
-      <div class="post-description flex flex--column flex-align--start">
-        <h3 class="post-title"><%= @post.title %></h3>
+    <div class="posts__content flex flex--row flex-align--start">
+      <%= image_tag @post.image_url(:medium), class: 'posts__image' %>
+      <div class="posts__description flex flex--column flex-align--start">
+        <h3 class="posts__title"><%= @post.title %></h3>
 
-        <p class="post-summary">
+        <p class="posts__summary">
           <%= @post.summary %>
         </p>
 
-        <time class="post-timestamp"><%= post_timestamp(@post.publish_at) %></time>
+        <time class="posts__timestamp"><%= post_timestamp(@post.publish_at) %></time>
       </div>
     </div>
-    <%= link_to t('post.see_other_posts'), posts_path, class: 'btn--primary section__button' %>
+    <%= link_to t('post.see_other_posts'), posts_path, class: 'btn--primary space__button' %>
   </div>
 </div>
