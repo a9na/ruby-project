@@ -27,3 +27,25 @@
         color: $white--true;
     }
 }
+
+
+.js-anchor {
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    z-index: 10;
+    animation: move-arrow 2s infinite ease-in-out; /* Continuous up and down movement */
+  }
+  
+  @keyframes move-arrow {
+    0% {
+      transform: translateY(0); /* Starting position */
+    }
+    50% {
+      transform: translateY(-10px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Move back to the starting position */
+    }
+  }
+  

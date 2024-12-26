@@ -1,0 +1,553 @@
+/*------------------------------------*\
+** COLORS
+\*------------------------------------*/
+/*------------------------------------*\
+** FONT WEIGHTS
+\*------------------------------------*/
+/*------------------------------------*\
+** BREAKPOINTS
+\*------------------------------------*/
+/*------------------------------------*\
+** BUTTONS
+\*------------------------------------*/
+/*------------------------------------*\
+** INPUTS
+\*------------------------------------*/
+/*------------------------------------*\
+** FONT SIZES
+\*------------------------------------*/
+/*------------------------------------*\
+# SETTINGS
+\*------------------------------------*/
+/*------------------------------------*\
+# TRANSITIONS
+\*------------------------------------*/
+/*------------------------------------*\
+** RESPONSIVE FONT SIZES
+\*------------------------------------*/
+/*------------------------------------*\
+** UTILIY FUNCTION FOR FONT-SIZE MIXIN
+\*------------------------------------*/
+/*------------------------------------*\
+** BREAKPOINTS
+\*------------------------------------*/
+/*------------------------------------*\
+** VERTICAL CENTERING
+\*------------------------------------*/
+/*------------------------------------*\
+** CARD DEPTH
+\*------------------------------------*/
+/*------------------------------------*\
+** UTILITY FUNCTION FOR CARD DEPTH MIXIN
+\*------------------------------------*/
+/*------------------------------------*\
+** UTILITY FUNCTION FOR CARD DEPTH MIXIN
+\*------------------------------------*/
+/*------------------------------------*\
+** FONT TYPO
+\*------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin-ext");
+@font-face {
+  font-family: 'SF-Pro-Display-Regular';
+  src: url(/assets/SF-Pro-Display-Regular-71a2162c852e87baa6440c983e406283391646778c8bc74e57b00613a3412f80.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF-Pro-Display-RegularItalic';
+  src: url(/assets/SF-Pro-Display-RegularItalic-f52ec6b2889632cc2880fb1c6bd2794ada6ab7946e1f7c458abe0d59732c485c.otf) format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SF-Pro-Display-Medium';
+  src: url(/assets/SF-Pro-Display-Medium-cbfd17919856efcedabdd73781dad2984326928ae7c9635bef6227b1a7d71d21.otf) format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF-Pro-Display-Bold';
+  src: url(/assets/SF-Pro-Display-Bold-a981001f6d4e70292fd26fa8e05437c4a9f0f8c5981027ff0ceead01bb30311f.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+/*------------------------------------*\
+** VERTICAL RHYTHM
+\*------------------------------------*/
+/*------------------------------------*\
+** HEADINGS
+\*------------------------------------*/
+/* line 59, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #2d2d2d;
+  font-family: "SF-Pro-Display-Bold", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 0.67em;
+  padding: 0;
+}
+
+/* line 68, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+h1 {
+  font-size: 1.29rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+@media screen and (min-width: 640px) {
+  /* line 68, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h1 {
+    font-size: 1.29rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 68, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 68, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 68, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
+/* line 73, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+h2 {
+  font-size: 1.14rem;
+  line-height: 1.25;
+}
+@media screen and (min-width: 640px) {
+  /* line 73, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h2 {
+    font-size: 1.14rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 73, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h2 {
+    font-size: 1.29rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 73, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h2 {
+    font-size: 1.29rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 73, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h2 {
+    font-size: 1.29rem;
+    line-height: 1.5;
+  }
+}
+
+/* line 77, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+h3 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 640px) {
+  /* line 77, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h3 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 77, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h3 {
+    font-size: 1.14rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 77, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h3 {
+    font-size: 1.14rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 77, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h3 {
+    font-size: 1.14rem;
+    line-height: 1.5;
+  }
+}
+
+/* line 81, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+h4 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 640px) {
+  /* line 81, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h4 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 81, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h4 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 81, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h4 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 81, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h4 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* line 85, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+h5 {
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 640px) {
+  /* line 85, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h5 {
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 85, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h5 {
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 85, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h5 {
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 85, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h5 {
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+}
+
+/* line 89, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+h6 {
+  font-size: 0.71rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 640px) {
+  /* line 89, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h6 {
+    font-size: 0.71rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 89, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h6 {
+    font-size: 0.71rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 89, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h6 {
+    font-size: 0.71rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 89, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+  h6 {
+    font-size: 0.71rem;
+    line-height: 1.5;
+  }
+}
+
+/*------------------------------------*\
+** LISTS
+\*------------------------------------*/
+/* line 99, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 103, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+ol li {
+  list-style-type: none;
+}
+
+/*------------------------------------*\
+** LINKS
+\*------------------------------------*/
+/* line 113, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+a {
+  outline-width: 0;
+  text-decoration: none;
+  transition: .2s ease-in;
+}
+
+/* line 119, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 126, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+a.link {
+  color: #0077AE;
+}
+
+/* line 130, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+a.link:focus,
+a.link:active,
+a.link:hover {
+  color: #212121;
+}
+
+/* line 136, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+.link--underline,
+.link--underline:hover,
+.link--underline:active,
+.link--underline:focus {
+  text-decoration: underline;
+}
+
+/*------------------------------------*\
+** FONT WEIGHTS
+\*------------------------------------*/
+/* line 148, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+.text--light {
+  font-weight: 300;
+}
+
+/* line 148, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+.text--regular {
+  font-weight: 400;
+}
+
+/* line 148, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+.text--medium {
+  font-weight: 500;
+}
+
+/* line 148, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+.text--semibold {
+  font-weight: 600;
+}
+
+/* line 148, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+.text--bold {
+  font-weight: 700;
+}
+
+/* line 148, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+.text--extrabold {
+  font-weight: 800;
+}
+
+/* line 148, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+.text--heavy {
+  font-weight: 900;
+}
+
+/*------------------------------------*\
+** OTHER
+\*------------------------------------*/
+/* line 159, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+b, strong, .strong {
+  font-weight: 700;
+}
+
+/* line 163, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+p {
+  font-family: "SF-Pro-Display-Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+/* line 169, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/admin/base/_typography.scss */
+code {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* line 1, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/admin-mailer.scss */
+.email--wrapper {
+  margin: 20px;
+  max-width: 600px;
+  border: 1px solid #0077AE;
+}
+
+/* line 8, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/admin-mailer.scss */
+.message--timestamp {
+  background-color: #0077AE;
+  color: #ffffff;
+}
+
+/* line 13, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/admin-mailer.scss */
+.email--footer {
+  color: #0077AE;
+  margin-top: 40px;
+  padding: 10px;
+  border-top: 1px solid #0077AE;
+  font-weight: 800;
+}
+
+/* line 21, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/admin-mailer.scss */
+h1 {
+  background-color: #0077AE;
+  color: #ffffff;
+  font-weight: 800;
+  padding: 10px;
+  margin: 0;
+}
+
+/* line 29, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/admin-mailer.scss */
+p {
+  font-size: 1.5rem;
+  padding: 0 15px;
+}
+
+/* line 34, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/admin-mailer.scss */
+h1, p, a {
+  text-align: center;
+}
+
+/* line 38, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/admin-mailer.scss */
+.margin--bottom {
+  margin-bottom: 50px;
+}
+
+/*------------------------------------*\
+# CORE BUTTONS
+\*------------------------------------*/
+/* line 10, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+button, .btn, a {
+  display: inline-block;
+  font-family: "SF-Pro-Display-Medium", sans-serif;
+  font-size: 0.79rem;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  transition: .2s ease-in-out;
+  padding-left: 1.86rem;
+  padding-right: 1.86rem;
+  padding-top: 0.71rem;
+  padding-bottom: 0.71rem;
+}
+/* line 27, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+button:focus, .btn:focus, a:focus {
+  outline: 0;
+  box-shadow: 0 0 0px 0px transparent;
+}
+/* line 32, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+button:hover, .btn:hover, a:hover {
+  cursor: pointer;
+}
+
+/*------------------------------------*\
+# PRIMARY / SECONDARY / TERTIARY
+\*------------------------------------*/
+/* line 41, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+.btn--primary, a {
+  color: #ffffff;
+  background-color: #0077AE;
+}
+/* line 45, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+.btn--primary:hover, a:hover {
+  background-color: #00abfb;
+}
+/* line 49, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+.btn--primary:focus, a:focus, .btn--primary:active, a:active {
+  background-color: #00abfb;
+  box-shadow: inset 0 0.5px 0.5px 0 #525252;
+}
+
+/*------------------------------------*\
+# LAYOUT
+\*------------------------------------*/
+/* line 66, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+.layout--main {
+  grid-column: 1/span 12;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* line 76, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+table {
+  width: 100%;
+}
+
+/* line 81, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+.center {
+  border: 1px solid #aaa;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+/* line 89, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+.title {
+  background-color: #0077AE;
+  color: #ffffff;
+  padding: 10px;
+}
+
+/* line 95, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+h3 {
+  text-decoration: underline;
+}
+
+/* line 99, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+.info {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* line 106, /workspaces/ruby-pr/ruby-project/app/assets/stylesheets/emails/foundation_emails.scss */
+p, h3, span, .title {
+  padding-left: 20px;
+  padding-right: 20px;
+}
