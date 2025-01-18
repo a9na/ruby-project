@@ -1,0 +1,30 @@
+.section__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.354;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 0 1.5rem;
+}
+
+.section__content {
+    padding: 0 30rem;
+
+}
+
+.form__field {
+    input, textarea {
+    border: 1px solid rgba(26,26,26,0.1);
+
+    padding: 0.75rem 1rem;
+    display: block;
+    width: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+    border-radius: 0rem;
+    transition: 0.3s;
+    }
+}
+

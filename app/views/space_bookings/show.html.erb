@@ -1,6 +1,6 @@
 <section class="section section--bookings">
   <div class="section__wrapper">
-    <h1 class="section__title"><%= t('space_booking.title') %></h1>
+    <h2 class="section__title"><%= t('space_booking.title') %></h2>
     <div class="section__content">
       <h2><%= t('space_booking.terms_for') %> 
         <% if @space_booking.space %>
@@ -21,6 +21,6 @@
         <% end %>
       </div>
     </div>
-    <div data-aos="fade-up" data-aos-offset="-100"><%= link_to t('space.back_to_home'), root_path, class: 'section__button' %></div>
+    <div data-aos="fade-up" data-aos-offset="-100"><%= link_to t('space.back_to_home'), root_path, class: 'btn--primary section__button' %></div>
   </div>
 </section>

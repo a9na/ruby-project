@@ -1,23 +1,18 @@
 #contact-project {
-    scroll-behavior: smooth;
+    display: flex;
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
 }
 
+
 .contact-wrapper {
-    margin-bottom: 1.5rem;
+    width: 100%;
+    margin: auto;
+    max-width: 13.75rem;
     margin-inline-start: 1.5rem;
     font-weight: 400;
     font-family: $base-font-family;
     font-size: 1.125rem;
-
-    .contact-detail {
-        margin: 0 0 0.625rem 0;
-    }
-}
-
-address {
-    font-style: normal;
 }
 
 .contact-google-map {
@@ -25,3 +20,11 @@ address {
     height: 22.5rem;
 }
 
+.contact-detail {
+    margin: 0 0 0.625rem 0; 
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 1rem; 
+}

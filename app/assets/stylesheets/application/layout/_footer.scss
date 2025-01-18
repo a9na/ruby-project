@@ -2,9 +2,11 @@
 ** FOOTER
 \*------------------------------------*/
 
-footer {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+footer img{
+  max-width: 100%; /* Ograniči širinu slike na širinu viewporta */
+  height: auto;    /* Održava omjer slike */
+  display: block;  /* Izbjegava dodatne praznine ispod slike */
+  margin: 0 auto;  /* Poravnava sliku u centru */
 }
 
 

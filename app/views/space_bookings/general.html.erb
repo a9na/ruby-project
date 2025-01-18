@@ -1,8 +1,8 @@
 <section class="section">
   <div class="section__wrapper">
-    <h1 class="section__title">
+    <h2 class="section__title">
       <%= t('space_booking.general') %>
-    </h1>
+    </h2>
     <div class="section__content">
       <%= form_for @space_booking, url: booking_save_general_space_path(@space), class: 'form', method: :post do |f| %>
         <div class="form__field">
@@ -34,7 +34,7 @@
           <%= f.text_area :purpose, class: 'textarea' %>
         </div>
         <div class="form__action">
-          <%= f.submit t('space_booking.pick_terms'), class: 'section__button' %>
+          <%= f.submit t('space_booking.pick_terms'), class: 'btn--primary section__button' %>
         </div>
       <% end %>
     </div>
