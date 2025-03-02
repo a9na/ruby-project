@@ -5,6 +5,14 @@
 }
 
 
+.contact-section .contact {
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
 .contact-wrapper {
     width: 100%;
     margin: auto;
@@ -13,18 +21,23 @@
     font-weight: 400;
     font-family: $base-font-family;
     font-size: 1.125rem;
+
+    @include mobile {
+        margin-top: 1.4rem;
+        margin-left: 16rem;
+    }
 }
 
 .contact-google-map {
-    width: 44.25rem;
-    height: 22.5rem;
+  width: 44.25rem;
+  height: 22.5rem;
 }
 
 .contact-detail {
     margin: 0 0 0.625rem 0; 
 }
 
-address {
+.address {
     font-style: normal;
     margin-bottom: 1rem; 
 }

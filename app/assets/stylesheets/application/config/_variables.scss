@@ -80,6 +80,11 @@ $large: 1024px;
 $xlarge: 1200px;
 $xxlarge: 1440px;
 
+$mobile-width: 340px;
+$tablet-width: 640px;
+$desktop-width: 2560px;
+
+
 $breakpoints: (
   small   : $small,
   medium  : $medium,

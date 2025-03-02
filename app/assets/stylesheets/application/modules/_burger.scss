@@ -95,3 +95,11 @@ body.burger-is-active {
     }
   }
 }
+
+.js_burger.burger-button {
+
+  @include mobile {
+    margin-right: 11.5rem;
+  }
+
+}

@@ -2,6 +2,10 @@
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
     margin-inline: 7.625rem;
+
+    @include mobile {
+        margin-inline: 0;
+    }
 }
 
 .spaces__info {
@@ -16,6 +20,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .image {

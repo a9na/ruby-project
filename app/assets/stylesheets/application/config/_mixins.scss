@@ -1,3 +1,5 @@
+@import 'variables';
+
 /*------------------------------------*\
 ** FLUID TYPOGRAPHY
 \*------------------------------------*/
@@ -161,4 +163,26 @@
   $color: rgba(black, nth(.24 .23 .23 .22 .22, $depth));
 
   @return 0 $primary-offset $blur $color;
+}
+
+
+// Mixin for mobile
+@mixin mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+// Mixin for tablet
+@mixin tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+// Mixin for desktop
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
 }
